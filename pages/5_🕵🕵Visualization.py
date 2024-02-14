@@ -14,5 +14,5 @@ st.title("ประชากรในบางประเทศ")
 st.bar_chart(data, x="Country", y="Population")
 
 st.line_chart(data, x="Country", y="Population")
-st.pie_chart(data, values="Population", labels="Country")
+#st.pie_chart(data, values="Population", labels="Country")
 st.scatter_plot(data, x="Country", y="Population")

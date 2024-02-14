@@ -1,5 +1,14 @@
 import streamlit as st
 import pandas as pd
+
+
+# ตัวอย่างข้อมูล
+data = pd.DataFrame({
+    "Country": ["ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"],
+    "Population": [70000000, 330000000, 1400000000, 125000000],
+    "GDP": [500000000000, 25000000000000, 15000000000000, 5000000000000]
+})
+
 import matplotlib.pyplot as plt
 labels = 'Men', 'Women'
 sizes = [NumM[1],NumF[1]]
@@ -9,14 +18,6 @@ fig1, ax1 = plt.subplots()
 ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
 st.pyplot(fig1)
-
-
-# ตัวอย่างข้อมูล
-data = pd.DataFrame({
-    "Country": ["ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"],
-    "Population": [70000000, 330000000, 1400000000, 125000000],
-    "GDP": [500000000000, 25000000000000, 15000000000000, 5000000000000]
-})
 
 # แสดงชื่อกราฟ
 st.title("ข้อมูลประเทศ")

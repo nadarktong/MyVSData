@@ -19,4 +19,4 @@ st.header("ทฤษฎีที่เกี่ยวข้อง")
 
 st.subheader("1.ทฤษฎีเหมืองข้อมูล")
 
-st.subheader("2.เทคนิคการวิเคราะห์ถดถอยเชิงเส้น(Linear Regression)")
+st.subheader("2.เทคนิคการจินตทัศน์ข้อมูลวิเคราะห์ถดถอยเชิงเส้น(Linear Regression)")

@@ -1,9 +1,9 @@
 import json
-import time
+import time 
 import requests
 
 import streamlit as st
-from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie #lottieใช้สำหรับรันไฟล์
 from streamlit_lottie import st_lottie_spinner
 
 def load_lottieurl(url: str):
@@ -12,7 +12,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-lottie_url_hello = "https://lottie.host/7beb1022-e2a7-4d35-be1e-a4f8372bd478/fPwMwU2mVy.json"
+lottie_url_hello = "https://lottie.host/425c8e43-a5bb-4052-aa10-4730e06b1437/m8vsAHh86O.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
 
 st.header("การพยากรณ์ข้อมูล....ด้วยเทคนิค Linear Regression")

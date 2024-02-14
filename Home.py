@@ -15,7 +15,7 @@ def load_lottieurl(url: str):
 lottie_url_hello = "https://lottie.host/fcd01209-0ad6-4615-8477-c2d5f76624dd/fDSfJEABkm.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
 
-st.header("การพยากรณ์ข้อมูล....ด้วยเทคนิค Linear Regression")
+st.header("☢ การพยากรณ์ข้อมูล....ด้วยเทคนิค Linear Regression🕵")
 st.header("by Kairung Hengpraprohm")
 
 #การเรียกใช้งาาน lottie file

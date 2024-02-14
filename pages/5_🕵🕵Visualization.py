@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-st.header(" 🦪 🍦Show Data Index Price 🦪 🍦")
+# ตัวอย่างข้อมูล
+data = pd.DataFrame({
+    "Country": ["ไทย", "อเมริกา", "จีน", "ญี่ปุ่น"],
+    "Population": [70000000, 330000000, 1400000000, 125000000]
+})
 
-df=pd.read_csv("./data/stock_index_price.csv")
-st.write(df.head(10))
+# แสดงชื่อกราฟ
+st.title("ประชากรในบางประเทศ")
 
-st.header("Show Chart")
-
-st.line_chart(
-   df, x="stock_index_price", y=["interest_rate", "unemployment_rate"], color=["#FF0000", "#0000FF"]  # Optional
-)
+# แสดง bar chart
+st.bar_chart(data, x="Country", y="Population")

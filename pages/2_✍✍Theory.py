@@ -18,5 +18,10 @@ st_lottie(lottie_hello, key="hello")
 st.header("ทฤษฎีที่เกี่ยวข้อง")
 
 st.subheader("1.ทฤษฎีเหมืองข้อมูล")
-
+st.info("""
+xxxxxxxxxxx
+""")
 st.subheader("2.เทคนิคการจินตทัศน์ข้อมูลวิเคราะห์ถดถอยเชิงเส้น(Linear Regression)")
+st.info("""
+xxxxxxxxxxx
+""")
